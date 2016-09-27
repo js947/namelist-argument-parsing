@@ -15,6 +15,7 @@ program parseargs
 
   allocate(character(0) :: iomsg)
   read(s, nml=cmd, iostat=iostat, iomsg=iomsg)
+  deallocate(s, iomsg)
 
   print *, i, j
 
