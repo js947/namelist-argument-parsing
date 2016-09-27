@@ -8,12 +8,16 @@ cache:
 addons:
   apt:
     packages:
-      - gcc-5
       - gfortran-5
+      - gfortran-6
     sources:
       - ubuntu-toolchain-r-test
 
-install: make FC=gfortran-5
+env:
+- FC=gfortran-5
+- FC=gfortran-6
+
+install: make
 
 script:
   - ./parseargs
