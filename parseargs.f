@@ -10,8 +10,10 @@ program parseargs
   j = 99
   print *, i, j
 
+  allocate(character(0) :: s)
   s = "&cmd "//get_arg()//"\"
 
+  allocate(character(0) :: iomsg)
   read(s, nml=cmd, iostat=iostat, iomsg=iomsg)
 
   print *, i, j
