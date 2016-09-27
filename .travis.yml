@@ -1,8 +1,16 @@
-language: c
+language: generic
+
+sudo: false
+
+cache:
+  apt: true
 
 addons:
   apt:
     packages:
-      - gfortran
+      - gcc-5
+      - gfortran-5
+    sources:
+      - ubuntu-toolchain-r-test
 
-script: make
+script: make FC=gfortran-5
