@@ -23,6 +23,5 @@ install: make
 script:
   - ./parseargs
   - valgrind --error-exitcode=1 --leak-check=full ./parseargs
-  - valgrind --error-exitcode=1 --leak-check=full ./parseargs 4 5
   - valgrind --error-exitcode=1 --leak-check=full ./parseargs i=4 j=5
   - valgrind --error-exitcode=1 --leak-check=full ./parseargs j=4 i=5
