@@ -7,3 +7,4 @@ Try running
     ./parseargs i=4 j=5
     ./parseargs j=4 i=5
 
+[![Build Status](https://travis-ci.org/js947/namelist-argument-parsing.svg?branch=master)](https://travis-ci.org/js947/namelist-argument-parsing)
